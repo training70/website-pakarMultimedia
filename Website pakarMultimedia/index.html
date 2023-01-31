@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pakarMultimedia;</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/fullpage.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-nav">
+        <ul class="ul__first">
+            <li id="logo">
+                <span>pakar</span>Multimedia;
+            </li>
+        </ul>
+        <ul class="ul__second">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </div>
+    <div class="container" id="myContainer">
+        <div class="section desain slide" id="desain" >
+            <div class="desain2 ilst" id="vctr"><img src="Aset/Images/desain2.png" alt="1"></div>
+            <div class="desain1 ilst" id="vctr"><img src="Aset/Images/desain1.png" alt="2"></div>
+            <h1>Design</h1>
+            <p>Belajar desain tanpa hectic</p>
+            <a href="desain.html"><button>Eksplor</button></a>
+        </div>
+        <div class="section video slide" id="video">
+            <div class="kalender1 ilst" id="vctr"><img src="Aset/Images/kalender1.png" alt="1"></div>
+            <div class="kalender2 ilst" id="vctr"><img src="Aset/Images/kalender1.png" alt="2"></div>
+            <h1>Video</h1>
+            <p>Belajar video editing tanpa ribet</p>
+            <a href="#"><button>Eksplor</button></a>
+        </div>
+        <div class="section code slide" id="code" >
+            <div class="code1 ilst" id="vctr"><img src="Aset/Images/code1.png" alt="1"></div>
+            <div class="code2 ilst" id="vctr"><img src="Aset/Images/code2.png" alt="2"></div>
+            <h1>Code</h1>
+            <p>Belajar koding tanpa bingung</p>
+            <a href="#"><button>Eksplor</button></a>
+        </div>
+        <div class="section motion slide" id="motion" >
+            <div class="motion1 ilst" id="vctr"><img src="Aset/Images/motion2.png" alt="1"></div>
+            <div class="motion2 ilst" id="vctr"><img src="Aset/Images/motion1.png" alt="2"></div>
+            <h1>Motion</h1>
+            <p>Belajar animasi tanpa pusing</p>
+            <a href="#"><button>Eksplor</button></a>
+        </div>
+    </div>
+    <div id="bot_navbar1">
+        <nav>
+            <ul>
+                <li><a onclick="desain()" class="active" href="#desain">Design</a></li>
+                <li><a onclick="code()" href="#code">Code</a></li>
+                <li><a onclick="motion()" href="#motion">Motion</a></li>
+                <li><a onclick="video()" href="#video">Video</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        function desain(){
+            document.body.style.backgroundColor = "#4eab52";
+        }
+        function code(){
+            document.body.style.backgroundColor = "#7f55b4";
+        }
+        function motion(){
+            document.body.style.backgroundColor = "#EBA25F";
+        }
+        function video(){
+            document.body.style.backgroundColor = "#ea5656";
+        }
+    </script>
+    </body>
+</html>

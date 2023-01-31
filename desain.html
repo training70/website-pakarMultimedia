@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas Desain pakarMultimedia;</title>
+    <link rel="stylesheet" href="CSS/designstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+    <!---Navbar + Search Bar----------------------->
+    <!--------------------------------------------->
+    <div class="header" style="background: url(Aset/Images/header.jpg);">
+        <header>
+            <div class="nav">
+                <ul class="ul__first">
+                    <li id="logo">
+                        <span>pakar</span>Multimedia;
+                    </li>
+                </ul>
+                <ul class="ul__second">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <ul class="ul__search">
+                    <div class="search_wrap">
+                        <div class="search_box">
+                            <input type="text" class="input" placeholder="Cari Materi...">
+                            <div class="btn btn_common">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <script>
+            window.addEventListener('scroll', function () {
+                let header = document.querySelector('header');
+                let windowPosition = window.scrollY > 0;
+                header.classList.toggle('scrolling-active', windowPosition);
+            })
+        </script>
+    <!--------------------------------------------->
+
+    <!---Header--->
+    <!--------------------------------------------->
+    <div class="content">
+        <h5>Welcome To</h5>
+        <h1>Design</h1>
+        <p>“There are three responses to a piece of design, <br> yes, no and WOW!. WOW is the one to aim for.”</br> - Milton Glaser</p>
+        <div class="span-body">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    </div>
+    <!--------------------------------------------->
+
+    <!---Card-------------------------------------->
+    <!--------------------------------------------->
+    <div class="h-card">
+        <div class="course" data-aos="fade-right">
+            <div class="preview">
+                <h6>Pelatihan</h6>
+                <h2>Desain Sketsa</h2>
+            </div>
+            <div class="info">
+                <h6>Materi 1</h6>
+                <h2>Desain Sketsa dan Prinsip Desain</h2>
+                <p>Disini kalian akan merancang sebuah desain dengan beberapa prinsip desain menggunakan sebuah sketsa.
+                </p>
+                <button class="btn-1">Mulai Belajar</button>
+            </div>
+        </div>
+        <div class="course-2" data-aos="fade-right">
+            <div class="preview">
+                <h6>Pelatihan</h6>
+                <h2>Aplikasi Komputer Grafis</h2>
+            </div>
+            <div class="info">
+                <h6>Materi 2</h6>
+                <h2>Aplikasi Komputer Grafis</h2>
+                <p>Disini kalian akan mencoba membuat sebuah desain yang sudah dirancang dengan beberapa aplikasi pengolah grafis.</p>
+                <button class="btn-1">Mulai Belajar</button>
+            </div>
+        </div>
+        <div class="course-3" data-aos="fade-right">
+            <div class="preview">
+                <h6>Pelatihan</h6>
+                <h2>Dasar Desain Grafis</h2>
+            </div>
+            <div class="info">
+                <h6>Materi 3</h6>
+                <h2>Dasar Desian Grafis</h2>
+                <p>Disini kalian akan mencoba menerapkan beberapa aplikasi komputer grafis yang akan digunakan untuk mendesain.</p>
+                <button class="btn-1">Mulai Belajar</button>
+            </div>
+        </div>
+        <div class="course-4" data-aos="fade-right">
+            <div class="preview">
+                <h6>Pelatihan</h6>
+                <h2>Desain Multimedia Interaktif</h2>
+            </div>
+            <div class="info">
+                <h6>Materi 4</h6>
+                <h2>Desain Multimedia Interaktif</h2>
+                <p>Disini kalian akan mencoba membuat sebuah sistem multimedia interaktif mulai dari perancangan user interface hingga perancangan user experience.</p>
+                <button class="btn-1" onclick="window.location='desainMMI.html';">Mulai Belajar</button>
+            </div>
+        </div>
+        <div class="course-5" data-aos="fade-right">
+            <div class="preview">
+                <h6>Pelatihan</h6>
+                <h2>Desain Grafis Percetakan</h2>
+            </div>
+            <div class="info">
+                <h6>Materi 5</h6>
+                <h2>Desain Grafis Percetakan</h2>
+                <p>Kalian dapat mempelajari bagaimana cara membuat produk desain yang dikhususkan untuk dicetak baik dalam bentuk 2D dalam berbagai media, maupun dalam bentuk 3D.</p>
+                <button class="btn-1">Mulai Belajar</button>
+            </div>
+        </div>
+        <div class="course-6" data-aos="fade-right">
+            <div class="preview">
+                <h6>Pelatihan</h6>
+                <h2>Desain Publikasi</h2>
+            </div>
+            <div class="info">
+                <h6>Materi 6</h6>
+                <h2>Desain Publikasi</h2>
+                <p>Langkah terakhir, kalian akan mempelajari bagaimana cara mempublikasikan karya kalian, apapun itu!</p>
+                <button class="btn-1">Mulai Belajar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <!--------------------------------------------->
+</body>
+    <footer>
+        <div class="blue">
+            <div class="white">
+            </div>
+        </div>
+        <div class="footer-body footer-html">
+        <div class="judul-2">
+            <h2>Temukan dan Hubungi Kami di</h2>
+        </div>
+        <div class="wrapper">
+            <div class="icon facebook">
+                <div class="tooltip">
+                    Facebook
+                </div>
+            <span><i class="fab fa-facebook-f"></i></span>
+            </div>
+            <div class="icon twitter">
+                <div class="tooltip">
+                    Twitter
+                </div>
+            <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">
+                    Instagram
+                </div>
+            <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon youtube">
+                <div class="tooltip">
+                    YouTube
+                </div>
+            <span><i class="fab fa-youtube"></i></span>
+            </div>
+            <div class="icon whatsapp">
+                <div class="tooltip">
+                    Whatsapp
+                </div>
+            <span><i class="fab fa-whatsapp"></i></span>
+            </div>
+        </div>
+        <div class="deskripsi">
+        <h2>pakarMultimedia &copy; 2020 All Right Reserved <br><a href="#">Be A Volunteer</a></br></h2>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,565 @@
+html, body, .container .section{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 400vw;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4EAB52;
+    transition: all ease 1s;
+}
+
+.container{
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+}
+
+
+.section{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+
+li, a{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-style: normal;
+    font-weight: 200;
+    color: #FBFBFB;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a:hover:after { 
+    width: 100%; 
+    left: 0;
+}
+
+.main-nav{
+    position: fixed;
+    display: flex;
+    padding: 6px 26px;
+    z-index: 3;
+}
+
+#logo{
+    padding: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #FBFBFB;
+}
+
+.main-nav .ul__second{
+    position: fixed;
+    display: flex;
+    right: 106px;
+    font-size: 24px;
+}
+
+.main-nav .ul__second li{
+    margin-left: 1.5em;
+}
+
+h1{
+    font-size: 160px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: white;
+    position: absolute;
+    left: 423px;
+    top: -85px;
+}
+
+p{
+    position: absolute;
+    width: 343px;
+    height: 36px;
+    left: 429px;
+    top: 200px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+
+    color: #FFFFFF;
+}
+
+/* Video */
+/* ------------------------------------------------------------- */
+#video{
+    background-color: #EA5656;
+}
+
+.video button{
+    position: absolute;
+    width: 206px;
+    height: 55px;
+    left: 429px;
+    top: 300px;
+    transform: translate(0,-40%);
+}
+
+.video button{
+    background: none;
+    color: #ccc;
+    width: 206px;
+    height: 55px;
+    border: 3px solid #FFFFFF;
+    transition: .6s;
+    overflow: hidden;
+    border-radius: 88px;   
+}
+
+.video a button{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FBFBFB;
+}
+
+.video a button:hover{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #EA5656;
+}
+
+
+.video button:focus{
+    outline: none;
+}
+
+.video button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #FFFFFF;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.video button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #EA5656;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.video button:hover{
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.video button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.video button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+
+.kalender1{
+    width: 187px;
+    left: 320px;
+    top: -41px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: 2;
+}
+
+.kalender2{
+    width: 187px;
+    left: 805px;
+    top: 31px;
+    z-index: 2;
+}
+
+.ilst{
+    position: absolute;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Desain */
+/* ------------------------------------------------------------- */
+.desain button{
+    position: absolute;
+    width: 206px;
+    height: 55px;
+    left: 429px;
+    top: 300px;
+    transform: translate(0,-40%);
+}
+
+.desain button{
+    background: none;
+    color: #ccc;
+    width: 206px;
+    height: 55px;
+    border: 3px solid #FFFFFF;
+    transition: .6s;
+    overflow: hidden;
+    border-radius: 88px;   
+}
+
+.desain a button{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FBFBFB;
+}
+
+.desain a button:hover{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #4EAB52;
+}
+
+
+.desain button:focus{
+    outline: none;
+}
+
+.desain button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #FFFFFF;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.desain button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #FBFBFB;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.desain button:hover{
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.desain button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.desain button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+
+.desain1{
+    left: 760px;
+    top: 21px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: rotate(0deg);
+}
+
+.desain2{
+    width: 226px;
+    height: 189px;
+    left: 306px;
+    top: -50px;
+    z-index: 2;
+}
+/* ------------------------------------------------------------- */
+
+/*Code*/
+/*-------------------------------------------------------------- */
+.code button{
+    position: absolute;
+    width: 206px;
+    height: 55px;
+    left: 429px;
+    top: 300px;
+    transform: translate(0,-40%);
+}
+
+.code button{
+    background: none;
+    color: #ccc;
+    width: 206px;
+    height: 55px;
+    border: 3px solid #FFFFFF;
+    transition: .6s;
+    overflow: hidden;
+    border-radius: 88px;   
+}
+
+.code a button{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FBFBFB;
+}
+
+.code a button:hover{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #7f55b4;
+}
+
+
+.code button:focus{
+    outline: none;
+}
+
+.code button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #FFFFFF;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.code button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #7f55b4;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.code button:hover{
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.code button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.code button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+
+.code1{
+    left: 200px;
+    top: -186px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.code2{
+    width: 226px;
+    height: 189px;
+    left: 606px;
+    top: -50px;
+    z-index: 0;
+}
+/* ------------------------------------------------------------- */
+
+/*Motion*/
+/*-------------------------------------------------------------- */
+
+.motion button{
+    position: absolute;
+    width: 206px;
+    height: 55px;
+    left: 429px;
+    top: 300px;
+    transform: translate(0,-40%);
+}
+
+.motion button{
+    background: none;
+    color: #ccc;
+    width: 206px;
+    height: 55px;
+    border: 3px solid #FFFFFF;
+    transition: .6s;
+    overflow: hidden;
+    border-radius: 88px;   
+}
+
+.motion a button{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FBFBFB;
+}
+
+.motion a button:hover{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #EBA25F;
+}
+
+
+.motion button:focus{
+    outline: none;
+}
+
+.motion button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #FFFFFF;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.motion button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #EBA25F;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.motion button:hover{
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.motion button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.motion button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+.motion1{
+    left: 860px;
+    top: 151px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: rotate(0deg);
+}
+
+.motion2{
+    width: 226px;
+    height: 189px;
+    left: 266px;
+    top: -30px;
+    z-index: 2;
+}
+/* ------------------------------------------------------------- */
+
+/*Slide*/
+/*-------------------------------------------------------------- */
+
+/*-------------------------------------------------------------- */
+
+/*----------------LOADER----------------------------------------*/
+
+/*--------------------------------------------------------------*/
+
+/*Bottom Navbar*/
+/*-------------------------------------------------------------- */
+#bot_navbar1{
+    bottom: 0;
+    padding-left: -15px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+#bot_navbar1 li{
+    display: inline-block;
+    padding: 28px 39px;
+    font-size: 24px;
+    z-index: 99;
+}
+
+#bot_navbar1 li a .active{
+    font-weight: 400;
+}
+/*--------------------------------------------------------------*/
+
